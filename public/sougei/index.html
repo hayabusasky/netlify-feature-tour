@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>送迎ルート作成</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>送迎ルート作成</h1>
+      <span id="facility-label" class="muted"></span>
+    </header>
+
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-tab="today" aria-selected="true">本日の送迎</button>
+      <button role="tab" data-tab="users">利用者・条件整理</button>
+      <button role="tab" data-tab="fleet">車両・職員</button>
+      <button role="tab" data-tab="settings">設定</button>
+    </nav>
+
+    <main>
+      <section id="tab-today" class="tab-panel"></section>
+      <section id="tab-users" class="tab-panel" hidden></section>
+      <section id="tab-fleet" class="tab-panel" hidden></section>
+      <section id="tab-settings" class="tab-panel" hidden></section>
+    </main>
+
+    <dialog id="user-dialog">
+      <form id="user-form" method="dialog"></form>
+    </dialog>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <script src="planner.js"></script>
+    <script src="sample.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

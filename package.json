@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "node --test tests/sougei-planner.test.cjs"
   },
   "devDependencies": {
     "@astrojs/preact": "^1.0.2",
